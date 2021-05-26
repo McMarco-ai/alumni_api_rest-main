@@ -63,7 +63,7 @@ router.route('/bolsas/:bolsaID')
     .delete(controller.deleteBolsa)
     .get(controller.getBolsaById)
     .put(controller.updateBolsaById)
-
+    
 router.route('/eventos')
     .get(controller.getAllEventos)
     .post(controller.createEvento)  
@@ -71,7 +71,7 @@ router.route('/eventos')
 router.route('/eventos/:eventoID')
     .delete(controller.deleteEvento)
     .get(controller.getEventoById)
-    .put(controller.updateEventoById)
+    .put(controller.updateEventoById)    
 
 //send a predefined error message for invalid routes
 router.all('*', function(req, res) {
